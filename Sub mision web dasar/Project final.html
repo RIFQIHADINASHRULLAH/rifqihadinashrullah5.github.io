@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masa putih abu abu</title>
+    <!--Link style untuk <h4>Klik dua kali pada gambar untuk <i class="fas fa-heart"></i>foto ini</h4>, Untuk menampilkan logo love-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous"/>
+
+    <!--Link style terpisah-->
+    <link rel="stylesheet" href="style web.css">
+
+    <!--Link style untuk logo aplikasi di footer-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!--Bagian heaader-->
+    <header>
+        <!--Class untuk menampilkan tulisan MY WEBSITE, Denagan variasi javascript pada kata kata: Selamat Datang Di Web Saya-->
+        <div class="utama">
+            <div class="inner-header flex">
+                <h1>MY WEBSITE</h1>
+
+                <!--Membuat variasi teks menggunakan javascript-->
+                <h2 id="text"></h2>
+                <label for="speed"></label>
+                <input
+                    type="number"
+                    name="speed"
+                    id="speed"
+                    value="2"
+                    min="1"
+                    max="5"
+                    step="1"/>
+            </div>
+
+            <!--Div untuk membuat header menjadi waves dan parallax-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                    </defs>
+
+                    <!--Menampilkan parallax pada header-->
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+        
+        <!--Menu Navigasi dengan variasi yang unik-->
+        <nav id="nav" class="active">
+            <!--Menu Navigasi-->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="Project final.html">Article</a></li>
+                <li><a href="">Kontak</a></li>
+                <li><a href="Project kalkulator.html">Lainnya</a></li>
+            </ul>
+
+            <!--Membuat button toggle agar navigasi lebih bervariasi-->
+            <button class="icon" id="toggle">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </button>
+        </nav>
+    </header>
+
+    <!--Konten Main-->
+    <main class="container">
+        <!--Bagian konten yang berisi cerita cerita masa sekolah saya-->
+        <div id="content">
+            <!--Daftra bagian bagian pada konten yang bisa diakses-->
+            <ul>
+                <li><a href="#masa mpls">MASA MPLS</a></li>
+                <li><a href="#tkj">LIKA LIKU TKJ</a></li>
+                <li><a href="#eskul">ESKUL</a></li>
+                <li><a href="#si dia">SI DIA</a></li>
+            </ul> 
+            
+            <!--Bagian Artikel MPLS-->
+            <article id="masa mpls" class="card">
+                <h2>Kenangan masa smk</h2>
+                <p>Sedikit cerita tentang masa smk, merupakan masa pendidikan 3 tahun terakhir pada program pendidikan 12 tahun, yang kita kenal dengan istilah masa puutih abu-abu, masa dimana kita mulai beranjak dari yang tadinya remaja menjadi lebih dewasa</p> 
+                <h2>Masa mpls</h2>
+                <p>Masa mpls atau yang lebih kita kenal dengan istilah Masa orientasi sekolah, dimana kita yang baru masuk ke sekolah akan...eee gimana ya bahasa nya, mungkin masa penyiksaan gitu kali yaaa, biasa lah yang baru masuk sekolah akan ada masa nya dikerjain dulu oleh kaka kelas yang lebih dulu masuk. Dari berbagai macam sekolah smp, yang tadinya hanya main dengan teman satu smp-nya saja, dimasa ini lah kita mulai saling kenal satu sama lain, yaa minimal teman satu kelas sih kenal atuhh. </p>
+
+                <!--Sub bagian dari Artikel MPLS yang berisi tentang Penegnalan lingkungan sekolah-->
+                <section class="box">
+                    <h3>Pengenalan lingkungan sekolah</h3>
+
+                    <!--Sedikit membuat variasi pada foto yang berjudul Masa rambut pada botak, ketika di klik 2 kali akan terdapat seberapa banyak diklik nantinya yang akan muncul pada tag span yang berada di tag small-->
+                    <h4>Klik dua kali pada gambar untuk <i class="fas fa-heart"></i>foto ini</h4>
+                    <small>Kamu menyukainya<span id="times">0</span>Kali</small>
+                    <img src="Pengenalan lingkungan sekolah.jpg" alt="Masa pengenalan sekolah" title="Masa rambut pada botak" class="articel-image">
+                    <p>Disini lah masa nya, masa dimana kita dikerjain oleh kaka kaka osis yang membagongkan. Disuruh beli ini itu lah, kadang disuruhnya tuh beli sesuatu yang langka coba, disuruh pake pakean yang aneh, pake kalung dari rumput misalnya, topi dari bola atau kardus, ini lah masa nya rada degeul sih, tapi ada serunya juga sihh. Diajak keliling sekolah, dikasih tau tentang semua fasilitas yang ada, lucu nya tuh disini, kita nurut aja yaa disuruh baris kaya kambing yang lagi diangon, kadang mentor atau apa bahasanya lah kaka pembina kali yaaa, iya kaka pembina nya suka bawa kayu kecil gitu ya kan, kita nya berasa kaya lagi diangon aja gitu. Masa yang seru dan gak bakal pernah keulang lagii ya kawan kawan, dimana kita bisa saling mengenal satu sama lain.</p>
+                </section>
+                
+                <!--Sub bagian dari Artikel MPLS yang berisi tentang Kemah bersama pramuka-->
+                <section class="box">
+                    <h3>Kemah bersama pramuka</h3>
+                    <img src="Kemah bersama.jpg" alt="kember 2019" title="Salam rimbaaa, hahaha" class="articel-image">
+                    <p>Persami atau perkemahan sabtu minggu, hanya dua hari satu malam tetapi kenangan nya sulit sekali untuk dilupakan, iya sulit kaya si dia eaaa. Gapapa kan ya sedikit berbagi cerita, mulai berangkat hari sabtu dengan penuh semangat, tas penuh, sampe naik mobil nya pun penuh berdesakan, biasa lahh transpot nya pake mobil truk, biar vibes nya terlihat kaya ngalam aja gitu. Kenangan yang paling teringet sampe sekarang dari perjusami ini adalah, ketika dibangunin jam 2 malem disuruh sholat tahajud dan tau gak setelah sholat kita disuruh apa..., malah disuruh bayangin kalo nanti pas pulang dari kemah ada bendera kuning di depan rumah kita, iyaa kita disuruh bayangin kalo orang tua kita meninggal, apalagi matanya sambil ditutup sama kain gitu, terus pake sound sedih gitu sambil kita nya disemprot semprot pake air, parah banget coba ya kann.  </p>
+                    <p>Sebenernya selain itu juga masih ada banyak sih, sedikit aja ya jadi gini..., maaf yaaa pernah, iya ini pernah, iya pernah mandi bareng juga, tapi sama temen segender yaa yakali sama lawan jenis bahaya atuhh itu mah. Seru juga ketika pos pos an, lumayan jauh loh jarak nya, dari mulai dibentak bentak, disuruh push up, ada yang atribut nya diambil, banyak lah kejadian nya, terus ada yang sampe pingsan juga gara gara ga kuat di perjalanan nya, dan yang membuat keinget sampe sekarang tentang pos posan ini adalah ketika sampe di pos istirahat atau pos medis, disana ada kaka kelas lebih tepatnya si teteh yang cantik, seketika pas nyampe pos ini rasa cape sebelumnya hilang semua, ahaahaha. Bahkan sampe acara penutupan pun masih bae saling tatap mata, walau dari kejauhan. Dah cukup lah jangan banyak banyak.</p>
+                    <p>Acara api unggun jangan sampe lupa, acara yang paling hangat di malam hari. Tapi sayangnya disini sabuk smp saya dirampas dan dibakar di api unggun itu, iya jadi ginii, kan sebelum acara api unggun itu ada razia terlebih dahulu ke setiap tenda peserta, dan kalo ada barang yang aneh atau yang tidak ada dalam persyaratan dibawa, barang itu diambil terus dibakar, mungkin kekurangan bahan bakar kali yaa, makannya dibakar buat dijadiin bahan bakar api unggun.</p>
+                </section>
+            </article>
+            
+            <!--Bagian Artikel Lika liku tkj-->
+            <article id="tkj" class="card">
+                <h2>Lika liku tkj</h2>
+
+                <!--Membuat figure foto-->
+                <figure>
+                    <img src="Logo tkj la.jpg" alt="Logo TKJ" class="foto-figure">
+                    <figcaption>Logo tkj</figcaption>
+                </figure>
+                <p>Teknik komputer dan jaringan, adalah jurusan yang saya jadikan sebagai pilihan utama ketika masuk SMK ini, awalnya saya masuk TKJ ini karena ingin bisa mainin laptop atau komputer aja gituu, biar ga terlalu gaptek aja. Jurusan yang lebih banyak anak laki-laki, tapi perempuan juga tetep ada pastinya. Dibagi jadi 2 aja kali yaa cerita nya, kelas 10 sama 12 nya aja, iya gitu. Mau tau alasannya kenapa..., kan kelas 11 belajarnya daring, yaa itung itung bonus aja kali ya, hahahaha.</p>
+               
+                <!--Sub bagian dari Artikel Lika liku tkj yang berisi tentang Kelas 10-->
+                <section class="box">
+                    <h3>Kelas 10</h3>
+                    <img src="Foto hari batik.jpg" alt="Hari batik" title="Foto nya pas lagi hari batik aja kali ya" class="articel-image">
+                    <p>Kelas 10, kelas yang penuh dengan drama teori, semuanya tentang teori nya doang, ga pernah praktek sedikit pun tentang pengenalan gitu. Jangankan praktek, masuk lab komputer nya aja belum dibolehin. Mau tau gak yang lebih kocak nya apa..., masa disuruh ngoding di buku tulis, iya pake pulpen ditulisin gitu kode kode nya. Pelajaran yang paling gak kieng atau males dipelajarin sama anak tkj waktu pas kelas 10 itu ketika belajar tentang sejarah, tau gak sampe sampe nilai pelajaran sejarah di skl itu paling kecil cuman 78 kalo ga salah dan ini tuh pas sama kkm nya. Tapi jangan remehkan juga sih teori teori yang diberikan, ini juga penting loh buat kedepannya kita juga jadi tau tentang dasar dasar dari jurusan tkj ini. </p>
+                </section>
+                
+                <!--Sub bagian dari Artikel Lika liku tkj yang berisi tentang Kelas 12-->
+                <section class="box">
+                    <h3>Kelas 12</h3>
+                    <img src="12 TKJ 2.jpg" alt="12 TKJ 2" title="12 TKJ 2" class="articel-image">
+                    <P>Akhirnya yang kita tunggu selama ini dari kelas 10 sampe 11, Disini lah dikelas 12 kita mulai diberikan materi peraktek langsung, masih inget pertama kali praktek itu tentang pengkabelan. Walaupun disekolah banyak alat alat buat prakteknya, kaya semacem tang krimping, lan tester, konektor rj nya, kabel nya juga ada, tapi saat itu saya beli semua itu sendiri, saking apa coba, saking pengen bisa lebih cepet dibanding yang lain semua alat itu saya gunakan untuk latihan dirumah. Nah setelah itu, berbagai macam praktek pun kita lakukan, banyak sih sampe gak ke itung. Kelas terakhir dimana serangkaian ujian pun kita jalani, ujikom salah satunya dimana ketika sudah selesai ujikom berasa kaya tenang banget, dan anggapan kami gini: ujian sekolah sih tenang gampang lah, yang penting ujikom udah kelar.</P>
+                    
+                    <!--Membuat figure foto-->
+                    <figure>
+                        <img src="ujikom.jpg" alt="ujikom" class="foto-figure">
+                        <figcaption>Potret sebelum ujikom</figcaption>
+                    </figure>
+                </section>
+            </article>
+
+            <!--Bagian Artikel Eskul-->
+            <article id="eskul" class="card">
+                <h2>Eskul</h2>
+                <p>Sekolah tanpa eskul, ibarat nantinya ga ada ceritanya banget, kaya semisal pulang terlambat, pulang malem, atau bahkan sampe nginep disekolah.</p>
+                
+                <!--Sub bagian dari Artikel Eskul yang berisi tentang Basket Skensala-->
+                <section class="box">
+                    <h3>Basket skensala</h3>
+                    <img src="Basket.jpg" alt="Basket skensala" title="Moment ketika ngelantik adik kelas" class="articel-image">
+                    <p>Memilih masuk eskul basket ini karena memang meneruskan apa yang sudah ada dari smp, iya karena waktu smp juga hobi basket, bukan hobi sih... jadi gimana ya bilangnya..., jadi gini pas awal masuk basket di masa smp itu niatnya cuman coba coba doang, jadi saya punya pikiran gini: kalo maasuk eskul model kaya futsal, sepak bola kaya gituan mah waktu kecil juga udah pernah mainin, beda dengan basket belum pernah sama sekali main pas waktu kecil. Saya itu orangnya seneng nyoba hal baru, kaya penasaran aja gitu. Dan akhirnya di smk juga memutuskan untuk lanjut main basket lagi, udah banyak hal yang dilalui, suka dan duka ketika berada di eskul ini, tentang pulang terlambat sampai kehujanan, dilarang latihan disekolah sendiri gara gara lockdown covid, main pas kuarter penghabisan doang, rada kesel sih tapi waktu itu masih kelas 10, untung saya sabaran orang nya.</p>
+                    <p>Sampai kelas 12 yang bertahan di eskul ini cuman 7 orang doang, iya untung masih bisa bentuk tim dengan formasi 5 utama, dan 2 orang sisa cadangan, sisanya kalo mau bawa lebih paling ngambil beberapa anak dari kelas 11 sama 10. Angkatan kita itu disebut sebagai angkatan korban covid, pengen latihan aja harus di luar sekolah, turnamen aja cuman ikut sekali kalinya, iya itu juga masih mending daripada gak pernah ikut turnamen sama sekali. Dan tau gak udah sekali ikut turnamen sekali main langsung gugur lagi, tau gak lawan nya apa..., malah ketemu SMAK Penabur cirebon coba, yang notabene nya juara Honda DBL pada masa golongan saya, gapapa sih kalah, pengalaman nya berharga bisa lawan juara Honda DBL se jawa barat.</p>
+                    <img src="tanding di gor bima.jpg" alt="tanding di gor bima" title="potret ketika tanding di gor bima" class="articel-image">
+                    
+                    <!--Membuat figure foto-->
+                    <figure>
+                        <img src="Roster basket angkatan 2022.JPG" alt="Roster basket" class="foto-figure">
+                        <figcaption>Roster basket angkatan 2022</figcaption>
+                    </figure>
+                </section>
+
+                <!--Sub bagian dari Artikel Eskul yang berisi tentang Tahfidz qur'an skensala-->
+                <section class="box">
+                    <h3>Tahfidz qur'an skensala</h3>
+                    <img src="Tahfidz skensala.jpg" alt="Tahfidz skensala" title="Tahfidz skensala" class="articel-image">
+                    <p>Tahfidz skensala, di eskul ini lah tempat bagi saya untuk menenangkan jiwa dan raga, agama itu merupakan hal yang utama, keyakinan serta kepercayaan yang kita harus genggam dengan erat. sudah banyak sekali kenangan kenangan yang berlalu, banyak sekali mungkin jika saya tulis satu halaman website ini bahkan tidak akan mampu untuk menampungnya. Pernah juga nginep di sekolahan gara gara nyiapin buat lomba besoknya, ceritanya waktu ulang tahun sekolah itu ada lomba tahfidz juga, ya otomatis kan jadi tuan rumahnya, sebagai tuan rumah yang baik harus mempersiapkan semuanya dengan baik tentunya. Momen ketika nginep ini lah yang paling diinget, mulai dari nyari kopi tengah malem disekitaran sekolah, makan mie bareng bareng sebaskom, banyak lah pokoknya. Kebersamaan dan solidaritas dari angkatan kami ini sangatlah besar.</p>        
+                </section>
+            </article>
+
+            <!--Bagian Artikel Si dia-->
+            <article id="si dia" class="card">
+                <h2>Si Dia</h2>
+                <p>Sedikit tentang si dia, muncul ketika masa akhir sekolah hanya beberapa bulan terakhir sebelum kelulusan, terhitung kira kira 2 bulan terkhir. Dengan waktu yang sesingkat itu akan teringat sekali kenangannya, saling menatap dari kejauhan, saling lewat depan kelas, pura-pura ketinggalan gorengan di kantin biar bisa balik lagi lewat depan kelasnya, lucu ya semua itu, kalo keinget hanya bisa tersenyum sambil nahan ketawa aja, hahaha. </p>
+            </article>
+        </div>
+
+        <!--Semua konten yang tampil di pojok kanan main-->
+        <aside>
+            <article class="tentang">
+                <!--Header Aside yang berisi logo serta beberapa caption-->
+                <header>
+                    <h3>SMKN 1 LEMAHABANG</h3>
+                    <figure>
+                        <img src="skensa.png" alt="logo skensala" class="tentang-png">
+                        <figcaption>Logo</figcaption>
+                    </figure>
+                </header>
+                
+                <!--Bagian yang berisi sedikit informasi tentang saya-->
+                <section>
+                    <h3>Tentang Saya</h3>
+
+                    <!--Membuat table informasi pribadi saya, karena akan terlihat lebih rapih jika menggunakan pola table-->
+                    <table>
+                        <tr>
+                            <th>Nama</th>
+                            <td>RIFQI HADI NASHRULLAH</td>
+                        </tr>
+                        <tr>
+                            <th>TTL</th>
+                            <td>Cirebon, 5 April 2004</td>
+                        </tr>
+                        <tr>
+                            <th>Agama</th>
+                            <td>Islam</td>
+                        </tr>
+                        <tr>
+                            <th>Status</th>
+                            <td>Fresh graduate/Belum kawin</td>
+                        </tr>
+                        <tr>
+                            <th>No.HP</th>
+                            <td>081573147515</td>
+                        </tr>
+                        <tr>
+                            <th>Instagram</th>
+                            <td>@dibyoungsigarantang</td>
+                        </tr>
+                    </table>
+                    <p><a href="">Profil Selengkapnya...</a></p>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <!--Bagian footer-->
+    <footer class="footer-distributed">
+
+        <!--Konten footer sebelah kiri-->
+        <div class="footer-left">
+            <h3>Tentang<span>MyWebsite</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Article</a>
+                |
+                <a href="#">Kontak</a>
+                |
+                <a href="#">Lainnya</a>
+            </p>
+
+            <p class="footer-name">© 2022 MyWebsite Pengalaman Pribadi</p>
+        </div>
+
+        <!--Konten footer yang ada di tengah-->
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>Karangsuwung, Karangsembung</span>Cirebon, Jawa Barat - 45186</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>Hubungi: +62 815-7314-7515</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p> Email: <a href="">rifkihadi461@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!--Konten footer sebelah kanan-->
+        <div class="footer-right">
+            <p class="footer-about"><span>Tentang Web Saya</span>Pengalaman pribadi, Cerita Klasik, Kalkulator Website, Tutorial, dan lain-lain</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Script web.js"></script>
+</body>
+</html>

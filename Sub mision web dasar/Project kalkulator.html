@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web calculator</title>
+    <link rel="stylesheet" href="style kalkulator.css">
+    <!--Link style untuk logo aplikasi di footer-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+         <!--Class untuk menampilkan tulisan MY WEBSITE, Denagan variasi javascript pada kata kata: Selamat Datang Di Web Saya-->
+         <div class="utama">
+            <div class="inner-header flex">
+                <h1>MY WEBSITE</h1>
+
+                <!--Membuat variasi teks menggunakan javascript-->
+                <h2 id="text"></h2>
+                <label for="speed"></label>
+                <input
+                    type="number"
+                    name="speed"
+                    id="speed"
+                    value="2"
+                    min="1"
+                    max="5"
+                    step="1"/>
+            </div>
+
+            <!--Div untuk membuat header menjadi waves dan parallax-->
+            <div>
+                <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                    <defs>
+                        <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+                    </defs>
+
+                    <!--Menampilkan parallax pada header-->
+                    <g class="parallax">
+                        <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)"></use>
+                        <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff"></use>
+                    </g>
+                </svg>
+            </div>
+
+        </div>
+        
+        <!--Menu Navigasi dengan variasi yang unik-->
+        <nav id="nav" class="active">
+            <!--Menu Navigasi-->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="Project final.html">Article</a></li>
+                <li><a href="">Kontak</a></li>
+                <li><a href="Project kalkulator.html">Lainnya</a></li>
+            </ul>
+
+            <!--Membuat button toggle agar navigasi lebih bervariasi-->
+            <button class="icon" id="toggle">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+            </button>
+        </nav>
+    </header>
+
+    <!--Konten yang akan tampil pada main-->
+    <main>
+        <!--Kalkulatornya-->
+        <div class="flex-container-column card">
+            <div class="display">
+                <h1 id="displaynumber">0</h1>
+            </div>
+            <div class="flex-container-row">
+                <div class="tombol">7</div>
+                <div class="tombol">8</div>
+                <div class="tombol">9</div>
+                <div class="tombol operator">×</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="tombol">4</div>
+                <div class="tombol">5</div>
+                <div class="tombol">6</div>
+                <div class="tombol operator">-</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="tombol">1</div>
+                <div class="tombol">2</div>
+                <div class="tombol">3</div>
+                <div class="tombol operator">+</div>
+            </div>
+            <div class="flex-container-row">
+                <div class="tombol clear">CE</div>
+                <div class="tombol">0</div>
+                <div class="tombol equals">=</div>
+                <div class="tombol operator">÷</div>
+            </div>
+        </div>
+        
+        <!--Tabel Riwayat Kalkulasi pada Web Kalkulator-->
+        <div class="history card">
+            <h2>Riwayat Perhitungan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Angka Pertama</th>
+                        <th>Operator</th>
+                        <th>Angka Kedua</th>
+                        <th>Hasil</th>
+                    </tr>
+                </thead>
+                <tbody id="historyList"></tbody>
+            </table>
+        </div>
+        <button id="clear">Hapus Riwayat!</button>
+    </main>
+
+    <!--Bagian footer-->
+    <footer class="footer-distributed">
+
+        <!--Konten footer sebelah kiri-->
+        <div class="footer-left">
+            <h3>Tentang<span>MyWebsite</span></h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Article</a>
+                |
+                <a href="#">Kontak</a>
+                |
+                <a href="#">Lainnya</a>
+            </p>
+
+            <p class="footer-name">© 2022 MyWebsite Pengalaman Pribadi</p>
+        </div>
+
+        <!--Konten footer yang ada di tengah-->
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                  <p><span>Karangsuwung, Karangsembung</span>Cirebon, Jawa Barat - 45186</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>Hubungi: +62 815-7314-7515</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p> Email: <a href="">rifkihadi461@gmail.com</a></p>
+            </div>
+        </div>
+
+        <!--Konten footer sebelah kanan-->
+        <div class="footer-right">
+            <p class="footer-about"><span>Tentang Web Saya</span>Pengalaman pribadi, Cerita Klasik, Kalkulator Website, Tutorial, dan lain-lain</p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!--Script untuk web storage-->
+   <script src="Storage kalkulator.js"></script>
+
+   <!--script pada kakulator-->
+   <script src="kalkulator.js"></script>
+</body>
+</html>
